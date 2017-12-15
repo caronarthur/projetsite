@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/Color.css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type='text/javascript' src='js/script.js'></script>
+    <script type='text/javascript' src='js/popup.js'></script>
+</head>
+<body>
+<header>
+    <h1>
+
+    </h1>
+
+    <div id="navigation" th:insert="~{common :: div('selectedMenu')}">
+
+    </div>
+</header>
+
+    <div id="ajout" class="zone">
+        <div class="titre">
+            <h1>Modification d'un Episode</h1>
+        </div>
+        <div class="contenu">
+            <form >
+                <h1>Titre<div class="champ"><input id="modifTitre" type="text" required th:value="${episodeamodifier.titre}"></div></h1>
+                <h1>Parution<div class="champ"><input id="modifParution" type="number" th:value="${episodeamodifier.parution}" required></div></h1>
+                <h1>Avis<div class="champ"><input type="number" id="modifAvis" th:value="${episodeamodifier.avis}" required></div></h1>
+                <div class="submit"><input type="button" class="button" value="Modifier" th:onclick="|modifierEpisode('${episodeamodifier.episode_id}')|"></div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+
+    <p>
+        WINTER IS COMING
+    </p>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div th:fragment="div(selectedMenu)" xmlns:th="http://www.w3.org/1999/xhtml">
+    <ul>
+
+
+        <a th:class="${selectedMenu == 'accueil'} ? 'focus' " href="accueil" class="bouton_navigation" id="bouton1">Page D'accueil</a>
+        <a th:class="${selectedMenu == 'personnage'} ? 'focus' " href="personnage" class="bouton_navigation" id="bouton2">Personnages</a>
+        <a th:class="${selectedMenu == 'episode'} ? 'focus' " href="episode" class="bouton_navigation" id="bouton3">Episodes</a>
+        <a th:class="${selectedMenu == 'edit'} ? 'focus' " href="edit" class="bouton_navigation" id="bouton4">modifier</a>
+
+
+
+    </ul>
+
+
+</div>

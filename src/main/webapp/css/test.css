@@ -1,0 +1,56 @@
+body{
+	background: url("../img/Header.jpg") no-repeat;
+	position: absolute;
+	bottom: 0;
+	background-position: fixed;
+}
+
+#navigation
+{
+	display: inline-block;
+	position: relative;
+	width: 508px;
+	height: 80px;
+	margin-bottom: 0;
+	background-color: grey;
+	border-radius:15px;
+	opacity: 0.7;
+	left: 70%;
+}
+
+#navigation a:hover{
+	background-color: #680000;
+	margin-bottom: 0px;
+	color: #C8C8C8;
+}
+ 
+.bouton_navigation{
+	display: inline-block;
+	height: 25px;
+	position: absolute;
+	top: 20px;
+	background-color: #900000;
+	border-radius:5px;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 3px 8px 0px 8px;
+	color: white;
+	text-decoration: none;
+}
+
+#bouton1{
+	right: 340px;
+}
+
+#bouton2{
+	right: 190px;
+}
+
+#bouton3{
+	right: 50px;
+}
+
+.page{
+	margin-left: 40%;
+	margin-right: 30%;
+}
