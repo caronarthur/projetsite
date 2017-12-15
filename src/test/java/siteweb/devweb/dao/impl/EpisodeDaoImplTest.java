@@ -56,5 +56,18 @@ public class EpisodeDaoImplTest {
         assertThat(personages).extracting("personnage_id","personnage_name").containsOnly(tuple(5,"Jon"),tuple(4,"Cersey"),tuple(3,"Daenerys"),tuple(2,"Tyrion"),tuple(1,"Jaime"));
 
     }
+    @Test
+    public void shouldGetPersonnage() {
+        // WHEN
+        Personage personage = personnageDao.getPersonnage(1);
+        // THEN
+        assertThat(personage).isNotNull();
+        assertThat(personage.getPersonnage_id()).isEqualTo(1);
+        assertThat(personage.getPersonnage_name()).isEqualTo("Jon Snow");
+    }
+
+
 
 }
+
+
